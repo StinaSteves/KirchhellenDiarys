@@ -1,0 +1,8 @@
+# robots.txt for Kirchhellen Diarys
+# TODO: Set your real domain in the Sitemap URL below.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://example.com/sitemap.xml
+

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+
+    <!-- Basis-SEO -->
+    <title>Kirchhellen Diarys</title>
+    <meta
+      name="description"
+      content="Aktuelle Beiträge aus Kirchhellen: News, Dorfleben, Facebook-Themen, Hintergründe & mehr."
+    />
+    <meta name="theme-color" content="#111111" />
+
+    <!-- Favicons/Manifest (falls vorhanden anpassen/ergänzen) -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" sizes="180x180" /> -->
+    <!-- <link rel="manifest" href="/site.webmanifest" /> -->
+
+    <!-- Social (OG/Twitter) — hilft auch Lighthouse SEO -->
+    <meta property="og:title" content="Kirchhellen Diarys" />
+    <meta
+      property="og:description"
+      content="Aktuelle Beiträge aus Kirchhellen: News, Dorfleben, Facebook-Themen, Hintergründe & mehr."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/" />
+    <meta property="og:image" content="/images/share-default.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Performance: Preconnects zu externen Hosts, die du nutzt -->
+    <!-- OpenStreetMap Tiles -->
+    <link rel="preconnect" href="https://a.tile.openstreetmap.org" crossorigin />
+    <link rel="preconnect" href="https://b.tile.openstreetmap.org" crossorigin />
+    <link rel="preconnect" href="https://c.tile.openstreetmap.org" crossorigin />
+    <!-- CDNs die du verwendest (anpassen/entfernen falls unnötig) -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin />
+
+    <!-- Fonts: wenn du Google Fonts nutzt, unbedingt display=swap -->
+    <!--
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    -->
+
+    <!-- Optional: Farbe der Adressleiste auf iOS/Android -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="mobile-web-app-capable" content="yes" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Vite Entry -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

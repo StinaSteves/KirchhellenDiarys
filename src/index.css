@@ -1,0 +1,141 @@
+@import url(https://fonts.bunny.net/css?family=gilda-display:400);
+@import url(https://fonts.bunny.net/css?family=actor:400|mukta-malar:200);
+@import url(https://fonts.bunny.net/css?family=acme:400);
+@import 'leaflet/dist/leaflet.css';
+@import "leaflet-draw/dist/leaflet.draw.css";
+
+:root {
+  --bg-color: #ffffff;
+  --text-color-dark: #000000;
+  --text-color-light: #ffffff;
+}
+
+html, body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  font-family: 'Actor', sans-serif;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.heroCtrlBtn:focus-visible,
+.readArticleBtn:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.sr-only-focusable {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: .5rem .75rem;
+  background: #111827;
+  color: #fff;
+  border-radius: .5rem;
+  z-index: 10000;
+}
+
+.navList a:focus-visible,
+.siteTitle a:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 3px;
+}
+
+.heroCtrlBtn:focus-visible,
+.readArticleBtn:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-1 { 
+  flex: 1; 
+}
+
+.mt-1{
+  margin-top: 1rem;
+}
+
+.mt-2{
+  margin-top: 2rem;
+}
+
+.mt-4{
+  margin-top: 4rem;
+}
+
+.mt-8  { 
+  margin-top: 8px; 
+}
+
+.mt-12 { 
+  margin-top: 12px; 
+}
+
+
+.ml-d0 { margin-left: 0; }
+.ml-d1 { margin-left: 16px; }
+.ml-d2 { margin-left: 32px; }
+.ml-d3 { margin-left: 48px; }
+.ml-d4 { margin-left: 64px; }
+
+
+
+.m-3{
+  margin: 3rem;
+}
+
+
+
+.mb-1{
+  margin-bottom: 1rem;
+}
+
+.mb-3{
+  margin-bottom: 3rem;
+}
+
+.mb-4{
+  margin-bottom: 4rem;
+}
+
+
+
+.pt-6{
+  padding-top: 6rem;
+}
+
+
+
+.p-3 {
+  padding: 3rem;
+}
+
