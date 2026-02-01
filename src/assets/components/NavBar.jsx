@@ -1,12 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
-import { getSession } from "../../lib/commentsApi.js";
-import AuthMenu from "./AuthMenu.jsx";
 import NavSearch from "./NavSearch.jsx";
 
 export default function NavBar({ theme = "dark" }) {
   const [active, setActive] = useState("Start");
-  const [user, setUser] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const location = useLocation();
@@ -23,12 +20,7 @@ export default function NavBar({ theme = "dark" }) {
     return () => window.removeEventListener("hashchange", onHash);
   }, []);
 
-  useEffect(() => {
-    (async () => {
-      const s = await getSession();
-      if (s.ok) setUser(s.user || null);
-    })();
-  }, []);
+
 
   const menuItems = useMemo(
     () => [
@@ -190,9 +182,7 @@ export default function NavBar({ theme = "dark" }) {
             onAfterNavigate={closeMenu}
           />
 
-          <div className="navAuth">
-            <AuthMenu user={user} setUser={setUser} />
-          </div>
+
         </div>
       </div>
     </div>

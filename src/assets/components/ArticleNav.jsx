@@ -1,8 +1,6 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
-import { getSession } from "../../lib/commentsApi.js";
-import AuthMenu from "./AuthMenu.jsx";
 
 export default function ArticleNav({ theme = "dark" }) {
   const [active, setActive] = useState("Start");
@@ -164,9 +162,6 @@ export default function ArticleNav({ theme = "dark" }) {
               </ul>
             </nav>
 
-            <div className="navAuth">
-              <AuthMenu user={user} setUser={setUser} />
-            </div>
           </div>
         </div>
       </div>

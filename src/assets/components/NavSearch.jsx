@@ -1,34 +1,48 @@
 import { useEffect, useRef, useState, useMemo } from "react";
-import { Link } from "react-router-dom";
-import blogData from "../data/blogData"; 
+import { useNavigate } from "react-router-dom";
+import blogData from "../data/blogData";
 
 export default function NavSearch() {
-  const [open, setOpen] = useState(false);    
-  const [panelOpen, setPanelOpen] = useState(false); 
+  const navigate = useNavigate();
+
+  const [open, setOpen] = useState(false);
+  const [panelOpen, setPanelOpen] = useState(false);
   const [q, setQ] = useState("");
   const [active, setActive] = useState(0);
 
-  const wrapRef  = useRef(null);
+  const wrapRef = useRef(null);
   const inputRef = useRef(null);
 
   const results = useMemo(() => {
     const s = q.trim().toLowerCase();
     if (!s) return [];
     return (blogData || [])
-      .filter(a =>
+      .filter((a) =>
         [a.title, a.description, a.category]
           .filter(Boolean)
-          .some(v => String(v).toLowerCase().includes(s))
+          .some((v) => String(v).toLowerCase().includes(s))
       )
       .slice(0, 8);
   }, [q]);
+
+  function closeAll() {
+    setOpen(false);
+    setPanelOpen(false);
+  }
+
+  function goToArticle(id) {
+    closeAll();
+    setQ("");
+    navigate(`/artikel/${id}`);
+    // optional: direkt nach oben
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }
 
   useEffect(() => {
     function onDoc(e) {
       if (!wrapRef.current) return;
       if (!wrapRef.current.contains(e.target)) {
-        setOpen(false);
-        setPanelOpen(false);
+        closeAll();
       }
     }
     document.addEventListener("mousedown", onDoc);
@@ -52,15 +66,17 @@ export default function NavSearch() {
 
   function onKeyNav(e) {
     if (!panelOpen || !results.length) return;
+
     if (e.key === "ArrowDown") {
       e.preventDefault();
-      setActive(i => (i + 1) % results.length);
+      setActive((i) => (i + 1) % results.length);
     } else if (e.key === "ArrowUp") {
       e.preventDefault();
-      setActive(i => (i - 1 + results.length) % results.length);
+      setActive((i) => (i - 1 + results.length) % results.length);
     } else if (e.key === "Enter") {
+      e.preventDefault();
       const r = results[active];
-      if (r) window.location.assign(`/artikel/${r.id}`);
+      if (r) goToArticle(r.id);
     }
   }
 
@@ -81,22 +97,19 @@ export default function NavSearch() {
     setTimeout(() => setPanelOpen(false), 120);
   }
 
-  function closeAll() {
-    setOpen(false);
-    setPanelOpen(false);
-  }
-
   return (
     <div ref={wrapRef} className={`navSearch ${open ? "is-open" : ""}`} role="search">
-      <button
+      {/* <button
         type="button"
         className="navSearchToggle"
         aria-label={open ? "Suche schließen" : "Suche öffnen"}
         aria-expanded={open}
-        onClick={() => setOpen(o => !o)}
-      />
+        onClick={() => setOpen((o) => !o)}
+      /> */}
+
       <div className="navSearchField">
         <span className="navSearchIcon" aria-hidden="true" />
+
         <input
           id="nav-search"
           ref={inputRef}
@@ -104,7 +117,7 @@ export default function NavSearch() {
           className="navSearchInput"
           placeholder="Suche…"
           value={q}
-          onChange={e => handleChange(e.target.value)}
+          onChange={(e) => handleChange(e.target.value)}
           onKeyDown={onKeyNav}
           onFocus={handleFocus}
           onBlur={handleBlur}
@@ -112,16 +125,19 @@ export default function NavSearch() {
           autoComplete="off"
         />
 
-        {open && (
+        {/* {open && (
           <button
             type="button"
             className="navSearchClose"
             aria-label="Suche schließen"
-            onClick={() => { closeAll(); setQ(""); }}
+            onClick={() => {
+              closeAll();
+              setQ("");
+            }}
           >
             ✕
           </button>
-        )}
+        )} */}
 
         {panelOpen && q && results.length > 0 && (
           <div className="navSearchPanel" role="listbox" aria-label="Suchvorschläge">
@@ -131,15 +147,26 @@ export default function NavSearch() {
                 className={`navSearchItem ${i === active ? "is-active" : ""}`}
                 role="option"
                 aria-selected={i === active}
+                // wichtig: verhindert, dass mousedown "outside click" triggert
+                onMouseDown={(e) => e.preventDefault()}
               >
-                <Link
+                <button
+                  type="button"
                   className="navSearchLink"
-                  to={`/artikel/${r.id}`}
-                  onClick={() => { closeAll(); }}
+                  onMouseDown={(e) => {
+                    // verhindert, dass dein document mousedown listener den Klick killt
+                    e.preventDefault();
+                    e.stopPropagation();
+                  }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    goToArticle(r.id);
+                  }}
                 >
                   <span className="navSearchTitle">{r.title}</span>
                   <span className="navSearchCat">{r.category}</span>
-                </Link>
+                </button>
               </div>
             ))}
           </div>

@@ -1,7 +1,6 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { getSession, sendContact } from "../../lib/commentsApi";
 
 export default function Footer() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });

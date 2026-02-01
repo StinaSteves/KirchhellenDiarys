@@ -90,11 +90,12 @@ export default function ReadMore() {
         >
           {facebookArticles.map((article, i) => (
             <SwiperSlide key={article.id} aria-label={`Artikel ${i + 1} von ${facebookArticles.length}`}>
-              <Link
-                to={`/artikel/${article.id}`}
-                className="blogCardLink"
-                aria-label={`Artikel lesen: ${article.title}`}
-              >
+        <Link
+  to={`/artikel/${article.id}`}
+  className="blogCardLink"
+  aria-label={`Artikel lesen: ${article.title}`}
+  onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "auto" })}
+>
                 <BlogCard article={article} />
               </Link>
             </SwiperSlide>
