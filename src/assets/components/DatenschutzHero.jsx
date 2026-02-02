@@ -19,7 +19,6 @@ export default function DatenschutzHero() {
     const first = facebookPosts[0];
     const candidate = first?.image;
 
-    // Base-URL sicher machen (GitHub Pages etc.)
     return withBase(candidate) || withBase("/images/fallback-hero.jpg");
   }, []);
 

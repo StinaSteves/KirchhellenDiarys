@@ -155,9 +155,7 @@ font-family: 'Mukta Malar', sans-serif;
   transition: transform 0.3s ease;
 }
 
-/* falls du den obigen Block mal testweise überschreiben wolltest:
-   Hier ist der Kommentar jetzt korrekt geschlossen.
-*/
+
 /*
 .blogCard img {
   width: 100%;
@@ -629,7 +627,7 @@ font-family: 'Mukta Malar', sans-serif;
 .categoryHeroWrapper {
   position: relative;
   overflow: hidden;
-  min-height: 420px; /* oder deine Hero-Höhe */
+  min-height: 420px; 
 }
 
 
@@ -678,7 +676,6 @@ font-family: 'Mukta Malar', sans-serif;
   z-index: 0;
 }
 
-/* overlays dürfen nicht 100% deckend sein */
 .categoryHeroWrapper .NewSecondOverlay,
 .categoryHeroWrapper .NewOverlay {
   position: absolute;
@@ -687,11 +684,10 @@ font-family: 'Mukta Malar', sans-serif;
   pointer-events: none;
 }
 
-/* Beispiel-Transparenz */
 .categoryHeroWrapper .NewSecondOverlay { background: rgba(0,0,0,0.25); }
 .categoryHeroWrapper .NewOverlay { background: rgba(0,0,0,0.10); }
 
-/* Nav und Text nach vorne */
+
 .categoryHeroWrapper .NewNavbarWrapper,
 .categoryHeroWrapper .heroTextWrapper {
   position: relative;
@@ -1335,7 +1331,6 @@ input[name="website"] {
 .navSearchInput::-webkit-search-results-decoration { -webkit-appearance:none; appearance:none; display:none; }
 .navSearchInput::-ms-clear { display:none; width:0; height:0; }
 
-/* Lupe im Feld (links) */
 .navSearchField .navSearchIcon {
   position: absolute;
   left: 10px;
@@ -1351,14 +1346,11 @@ input[name="website"] {
 }
 
 
-/* ===== kompakteres, helleres Search-Dropdown ===== */
-
 .navSearchPanel{
   position: absolute;
   top: calc(var(--ns-h) + 8px);
   left: 0;
 
-  /* Größe: eher Dropdown statt Overlay */
   width: min(360px, 92vw);
   max-width: 360px;
   max-height: 42vh;
@@ -1367,7 +1359,6 @@ input[name="website"] {
   scrollbar-width: none;
   -ms-overflow-style: none;
 
-  /* weniger schwarz, mehr "glass" */
   background: rgba(255,255,255,.14);
   border: 1px solid rgba(255,255,255,.22);
   border-radius: 14px;
@@ -1382,7 +1373,6 @@ input[name="website"] {
 }
 .navSearchPanel::-webkit-scrollbar{ display:none; }
 
-/* Items kompakter + besser lesbar */
 .navSearchItem{
   border-radius: 12px;
 }
@@ -1404,7 +1394,6 @@ input[name="website"] {
   cursor: pointer;
 }
 
-/* Hover/Active: etwas heller statt schwarzer Block */
 .navSearchItem:hover .navSearchLink,
 .navSearchItem.is-active .navSearchLink{
   background: rgba(0,0,0,.32);
@@ -1436,31 +1425,10 @@ input[name="website"] {
   background: rgba(255,255,255,.16);
 }
 
-/* Abstand zwischen Items */
 .navSearchPanel .navSearchItem + .navSearchItem{
   margin-top: 6px;
 }
 
-/* Desktop: Panel rechts unter dem Input ausrichten (sieht natürlicher aus) */
-@media (min-width: 981px){
-  .navSearchPanel{
-    left: auto;
-    right: 0;
-  }
-}
-
-/* Mobile: etwas breiter, aber nicht riesig */
-@media (max-width: 980px){
-  .navSearchPanel{
-    width: min(92vw, 360px) !important;
-    max-width: 360px;
-    max-height: 46vh;
-    right: 0;
-    left: auto;
-  }
-}
-
-/* Light navbar: Dropdown bleibt trotzdem gut lesbar */
 .navbar-light .navSearchPanel{
   background: rgba(255,255,255,.75);
   border-color: rgba(0,0,0,.10);
@@ -1827,12 +1795,12 @@ input[name="website"] {
   gap: 8px;
   padding: 8px 12px;
 
-  border: 1px solid rgba(255, 255, 255, 0.3); /* leicht transparente Kante */
-  border-radius: 8px; /* rund macht es edler */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px; 
   
-  background: rgba(255, 255, 255, 0.15); /* halbtransparentes Weiß */
+  background: rgba(255, 255, 255, 0.15); 
   backdrop-filter: blur(10px) saturate(150%); 
-  -webkit-backdrop-filter: blur(10px) saturate(150%); /* Safari Fix */
+  -webkit-backdrop-filter: blur(10px) saturate(150%); 
   
   cursor: pointer;
   transition: background 0.3s ease, border-color 0.3s ease;
@@ -1930,7 +1898,7 @@ input[name="website"] {
   border-radius: 8px;
   border: 1px solid #ddd;
   cursor: pointer;
-  background: var(--swatch-color, #ccc); /* ⟵ nimmt die vom Label gesetzte Variable */
+  background: var(--swatch-color, #ccc); 
   position: relative;
 }
 
@@ -2377,7 +2345,7 @@ margin-left: 2rem;
 }
 
 .hero-bg-impressum {
-  background-image: url("/images/fallback-hero.jpg"); /* Standard */
+  background-image: url("/images/fallback-hero.jpg"); 
 }
 
 .hero-bg-impressum[data-has-bg="true"] {
@@ -2597,13 +2565,11 @@ margin-left: 2rem;
 
 .categoryHeroWrapper.is-archiev {
   position: relative;
-  /* Höhe kannst du anpassen: */
   --hero-h: clamp(260px, 55vh, 560px);
   min-height: var(--hero-h);
   overflow: clip;
 }
 
-/* Hintergrundbild als Schicht unter dem Inhalt */
 .categoryHeroWrapper.is-archiev .heroMedia {
   position: absolute;
   inset: 0;
@@ -2611,9 +2577,7 @@ margin-left: 2rem;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  /* Verhindert Pointer auf dem Bild */
   pointer-events: none;
-  /* Für bessere LCP: kein aufwendiges CSS-Filter hier anwenden */
 }
 
 
@@ -2851,13 +2815,10 @@ margin-left: 2rem;
 } */
 
 
-/*=================================================Lazy Map============================================*/
+/*===================================Read More========================================*/
 
 
-/* === ReadMore Slider: Pfeile über dem Bild platzieren ===================== */
 .readmoreSlider {
-  /* Höhe des Bildbereichs (an deine Card-Bildhöhe anpassen)
-     Wenn deine BlogCard das Bild anders setzt, einfach den Wert angleichen. */
   --media-h: 260px;
   --nav-x: 12px;
   --nav-size: 44px;
@@ -2865,13 +2826,11 @@ margin-left: 2rem;
   position: relative;
 }
 
-/* Bildhöhe für die Karten im Read-More (optional – nur wenn du die Höhe hier steuern willst) */
 .readmoreSlider .blogCard img {
   height: var(--media-h);
   object-fit: cover;
 }
 
-/* Pfeile relativ zum Wrapper – vertikal auf Bildmitte zentriert */
 .readmoreSlider .news-nav {
   position: absolute;
   top: calc(var(--media-h) / 2);
@@ -2894,13 +2853,6 @@ margin-left: 2rem;
 .readmoreSlider .news-next { right: var(--nav-x); }
 .readmoreSlider .news-nav:hover { background: #eee; }
 
-/* Responsive Tweaks */
-@media (max-width: 1024px) {
-  .readmoreSlider { --media-h: 220px; --nav-x: 8px; --nav-size: 40px; }
-}
-@media (max-width: 640px) {
-  .readmoreSlider { --media-h: 200px; --nav-x: 6px; --nav-size: 38px; }
-}
 
 .articleContent p {
   margin-bottom: 1.5rem;

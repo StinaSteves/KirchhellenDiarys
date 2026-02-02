@@ -24,7 +24,6 @@ export default function Impressum() {
         <section className="imp-page" role="region" aria-label="Impressumsangaben">
           <article className="imp-card" aria-labelledby="responsible-heading">
             
-            {/* Verantwortlich */}
             <section className="imp-section" aria-labelledby="responsible-heading">
               <h2 id="responsible-heading" className="imp-h3">
                 Verantwortlich für den Inhalt
@@ -37,7 +36,6 @@ export default function Impressum() {
               </address>
             </section>
 
-            {/* Kontakt */}
             <section className="imp-section imp-sep" aria-labelledby="contact-heading">
               <h2 id="contact-heading" className="imp-h3">Kontakt</h2>
               <ul className="imp-list">
@@ -64,7 +62,6 @@ export default function Impressum() {
               </ul>
             </section>
 
-            {/* Haftung Inhalte */}
             <section className="imp-section imp-sep" aria-labelledby="liability-content-heading">
               <h2 id="liability-content-heading" className="imp-h3">
                 Haftung für Inhalte
@@ -79,7 +76,6 @@ export default function Impressum() {
               </p>
             </section>
 
-            {/* Haftung Links */}
             <section className="imp-section imp-sep" aria-labelledby="liability-links-heading">
               <h2 id="liability-links-heading" className="imp-h3">
                 Haftung für Links
@@ -93,7 +89,6 @@ export default function Impressum() {
               </p>
             </section>
 
-            {/* Urheberrecht */}
             <section className="imp-section imp-sep" aria-labelledby="copyright-heading">
               <h2 id="copyright-heading" className="imp-h3">
                 Urheberrecht
@@ -106,7 +101,6 @@ export default function Impressum() {
               </p>
             </section>
 
-            {/* Hinweis */}
             <section className="imp-section imp-sep" aria-labelledby="note-heading">
               <h2 id="note-heading" className="imp-h3">Hinweis</h2>
               <p className="imp-text">

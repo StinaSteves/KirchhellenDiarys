@@ -10,7 +10,6 @@ import "swiper/css/navigation";
 export default function ReadMore() {
   const { id: currentId } = useParams();
 
-  // 🏡 Nur Dorf-Artikel + aktueller Artikel rausfiltern
   const dorfArticles = useMemo(() => {
     return (blogData || []).filter((article) => {
       const cat = String(article?.category ?? "").toLowerCase().trim();
@@ -20,7 +19,6 @@ export default function ReadMore() {
     });
   }, [currentId]);
 
-  // 🚫 wenn nichts da ist → Section gar nicht rendern
   if (dorfArticles.length === 0) return null;
 
   const prevRef = useRef(null);

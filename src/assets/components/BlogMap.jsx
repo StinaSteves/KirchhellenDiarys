@@ -10,7 +10,6 @@ import marker2x from "leaflet/dist/images/marker-icon-2x.png";
 import marker1x from "leaflet/dist/images/marker-icon.png";
 import shadow from "leaflet/dist/images/marker-shadow.png";
 
-// Fix für Leaflet Marker Icons in Vite/React
 const defaultIcon = new L.Icon({
   iconRetinaUrl: marker2x,
   iconUrl: marker1x,
@@ -32,7 +31,6 @@ export default function BlogMap() {
     return m;
   }, []);
 
-  // Optional: sortiert für konsistente Anzeige in Tooltips/Popups
   const points = useMemo(() => {
     const raw = Array.isArray(mapState?.points) ? mapState.points : [];
     return raw.map((p) => ({
@@ -72,7 +70,7 @@ export default function BlogMap() {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
 
-          {/* Optional: Bereich/Polygon */}
+          {/*Bereich/Polygon */}
           {Array.isArray(polygon) && polygon.length >= 3 && (
             <Polygon
               positions={polygon}
@@ -85,7 +83,6 @@ export default function BlogMap() {
             />
           )}
 
-          {/* Optional: Home Marker */}
           {home?.lat != null && home?.lng != null && (
             <Marker position={[home.lat, home.lng]} icon={defaultIcon}>
               <Popup>
@@ -99,7 +96,6 @@ export default function BlogMap() {
             </Marker>
           )}
 
-          {/* Punkte + Radius + Post-Link */}
           {points.map((p) => {
             const post = p.postId ? postsById.get(p.postId) : null;
             const title = post?.title || "Marker";
@@ -108,7 +104,6 @@ export default function BlogMap() {
 
             return (
               <div key={p.id}>
-                {/* Radius */}
                 {p.radius > 0 ? (
                   <Circle
                     center={[p.lat, p.lng]}

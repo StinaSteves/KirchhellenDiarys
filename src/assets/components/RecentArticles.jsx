@@ -2,15 +2,12 @@ import { useMemo, useState } from "react";
 import blogData from "../data/blogData";
 import { Link } from "react-router-dom";
 
-// 🔧 robustes Date-Parsing (ISO + deutsches Format)
 const parseDate = (date) => {
   if (!date) return 0;
 
-  // ISO / Standard-Date
   const iso = Date.parse(date);
   if (!isNaN(iso)) return iso;
 
-  // Deutsches Format: DD.MM.YYYY
   const m = date.match(/^(\d{2})\.(\d{2})\.(\d{4})$/);
   if (m) {
     const [, d, mo, y] = m;
@@ -28,11 +25,10 @@ export default function RecentArticles() {
 
   const total = blogData.length;
 
-  // 🆕 sortiert neu → alt, danach slice
   const visibleArticles = useMemo(
     () =>
       blogData
-        .slice() // Original nicht mutieren
+        .slice()
         .sort((a, b) => parseDate(b?.date) - parseDate(a?.date))
         .slice(0, visibleCount),
     [visibleCount]

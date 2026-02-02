@@ -34,7 +34,6 @@ export default function NavSearch() {
     closeAll();
     setQ("");
     navigate(`/artikel/${id}`);
-    // optional: direkt nach oben
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }
 
@@ -147,14 +146,12 @@ export default function NavSearch() {
                 className={`navSearchItem ${i === active ? "is-active" : ""}`}
                 role="option"
                 aria-selected={i === active}
-                // wichtig: verhindert, dass mousedown "outside click" triggert
                 onMouseDown={(e) => e.preventDefault()}
               >
                 <button
                   type="button"
                   className="navSearchLink"
                   onMouseDown={(e) => {
-                    // verhindert, dass dein document mousedown listener den Klick killt
                     e.preventDefault();
                     e.stopPropagation();
                   }}

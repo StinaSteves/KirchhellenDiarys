@@ -4,11 +4,9 @@ import { Link } from "react-router-dom";
 const parseDate = (date) => {
   if (!date) return 0;
 
-  // ISO / normales Date-Format
   const iso = Date.parse(date);
   if (!isNaN(iso)) return iso;
 
-  // deutsches Format: DD.MM.YYYY
   const match = date.match(/^(\d{2})\.(\d{2})\.(\d{4})$/);
   if (match) {
     const [, d, m, y] = match;
@@ -20,7 +18,7 @@ const parseDate = (date) => {
 
 export default function PopularArticles() {
   const popularArticles = (blogData || [])
-    .slice() // keine Mutation des Originals
+    .slice() 
     .sort((a, b) => parseDate(b?.date) - parseDate(a?.date))
     .slice(0, 3);
 

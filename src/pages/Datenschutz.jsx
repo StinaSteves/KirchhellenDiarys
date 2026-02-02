@@ -62,7 +62,6 @@ export default function Datenschutz() {
               Datenschutzerklärung – Details
             </h2>
 
-            {/* 1 */}
             <section className="ds-sec" id="ds-1" aria-labelledby="ds-h3-1">
               <h3 className="ds-h3" id="ds-h3-1">1. Verantwortliche Stelle</h3>
               <address className="ds-txt ds-address" style={{ fontStyle: "normal" }}>
@@ -77,7 +76,6 @@ export default function Datenschutz() {
               </address>
             </section>
 
-            {/* 2 */}
             <section className="ds-sec ds-sep" id="ds-2" aria-labelledby="ds-h3-2">
               <h3 className="ds-h3" id="ds-h3-2">2. Erhobene Daten</h3>
               <ul className="ds-list">
@@ -89,7 +87,6 @@ export default function Datenschutz() {
               </ul>
             </section>
 
-            {/* 3 */}
             <section className="ds-sec ds-sep" id="ds-3" aria-labelledby="ds-h3-3">
               <h3 className="ds-h3" id="ds-h3-3">3. Zwecke der Verarbeitung</h3>
               <p className="ds-txt">
@@ -99,7 +96,6 @@ export default function Datenschutz() {
               </p>
             </section>
 
-            {/* 4 */}
             <section className="ds-sec ds-sep" id="ds-4" aria-labelledby="ds-h3-4">
               <h3 className="ds-h3" id="ds-h3-4">4. Cookies</h3>
               <p className="ds-txt">Wir setzen folgende Cookies ein:</p>
@@ -110,7 +106,6 @@ export default function Datenschutz() {
               </ul>
             </section>
 
-            {/* 5 */}
             <section className="ds-sec ds-sep" id="ds-5" aria-labelledby="ds-h3-5">
               <h3 className="ds-h3" id="ds-h3-5">5. Google Analytics</h3>
               <p className="ds-txt">
@@ -124,7 +119,6 @@ export default function Datenschutz() {
               </p>
             </section>
 
-            {/* 6 */}
             <section className="ds-sec ds-sep" id="ds-6" aria-labelledby="ds-h3-6">
               <h3 className="ds-h3" id="ds-h3-6">6. Karten-Dienst (OpenStreetMap)</h3>
               <p className="ds-txt">
@@ -145,7 +139,6 @@ export default function Datenschutz() {
               </p>
             </section>
 
-            {/* 7 */}
             <section className="ds-sec ds-sep" id="ds-7" aria-labelledby="ds-h3-7">
               <h3 className="ds-h3" id="ds-h3-7">7. Kontaktformular</h3>
               <p className="ds-txt">
@@ -155,7 +148,6 @@ export default function Datenschutz() {
               </p>
             </section>
 
-            {/* 8 */}
             <section className="ds-sec ds-sep" id="ds-8" aria-labelledby="ds-h3-8">
               <h3 className="ds-h3" id="ds-h3-8">8. Speicherdauer</h3>
               <p className="ds-txt">
@@ -165,7 +157,6 @@ export default function Datenschutz() {
               </p>
             </section>
 
-            {/* 9 */}
             <section className="ds-sec ds-sep" id="ds-9" aria-labelledby="ds-h3-9">
               <h3 className="ds-h3" id="ds-h3-9">9. Rechte der Nutzer</h3>
               <ul className="ds-list">
@@ -179,7 +170,6 @@ export default function Datenschutz() {
               </ul>
             </section>
 
-            {/* 10 */}
             <section className="ds-sec ds-sep" id="ds-10" aria-labelledby="ds-h3-10">
               <h3 className="ds-h3" id="ds-h3-10">10. Stand</h3>
               <p className="ds-txt">
