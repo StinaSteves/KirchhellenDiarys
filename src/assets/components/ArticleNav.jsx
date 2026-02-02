@@ -1,31 +1,22 @@
-
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 
 export default function ArticleNav({ theme = "dark" }) {
   const [active, setActive] = useState("Start");
-  const [user, setUser] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const location = useLocation();
-  const navigate  = useNavigate();
+  const navigate = useNavigate();
 
-  const burgerRef     = useRef(null);
-  const menuRef       = useRef(null);
-  const firstLinkRef  = useRef(null);
-
-  useEffect(() => {
-    (async () => {
-      const s = await getSession();
-      if (s.ok) setUser(s.user || null);
-    })();
-  }, []);
+  const burgerRef = useRef(null);
+  const menuRef = useRef(null);
+  const firstLinkRef = useRef(null);
 
   const menuItems = useMemo(
     () => [
-      { name: "Start",     anchor: "hero" },
-      { name: "Artikel",   anchor: "artikel" },
-      { name: "Beliebt",   anchor: "beliebt" },
+      { name: "Start", anchor: "hero" },
+      { name: "Artikel", anchor: "artikel" },
+      { name: "Beliebt", anchor: "beliebt" },
       { name: "Kategorie", anchor: "kategorie" },
     ],
     []
@@ -38,7 +29,7 @@ export default function ArticleNav({ theme = "dark" }) {
   }, [location, menuItems]);
 
   const toggleMenu = () => setMenuOpen((o) => !o);
-  const closeMenu  = () => setMenuOpen(false);
+  const closeMenu = () => setMenuOpen(false);
 
   useEffect(() => {
     if (menuOpen && firstLinkRef.current) firstLinkRef.current.focus();
@@ -143,7 +134,9 @@ export default function ArticleNav({ theme = "dark" }) {
                       ref={idx === 0 ? firstLinkRef : null}
                       href={`#${item.anchor}`}
                       className={active === item.name ? "active" : ""}
-                      aria-current={active === item.name ? "location" : undefined}
+                      aria-current={
+                        active === item.name ? "location" : undefined
+                      }
                       onClick={(e) => {
                         e.preventDefault();
                         handleClick(item);
@@ -161,10 +154,10 @@ export default function ArticleNav({ theme = "dark" }) {
                 ))}
               </ul>
             </nav>
-
           </div>
         </div>
       </div>
+
       <div className="navUnderlineWrapper" aria-hidden="true">
         <div className="navUnderline"></div>
       </div>

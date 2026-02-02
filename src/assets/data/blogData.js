@@ -39,7 +39,7 @@ const blogData = [
     {
         id: 2,
         title: "Über Umzüge und Baustellen",
-        category: "dorf",
+        category: "mood",
         description: "Als ob ein Umzug mit Agoraphobie nicht schon spannend genug wäre, scheint dieser hier es wirklich ganz besonders in sich zu haben! Seit drei Monaten wissen wir, wohin die Reise geht – und seit drei Monaten steht zwischen mir und meiner neuen Wohnung eine dicke, große, endlose Baustelle.",
         date: "12.10.2025",
         image: "/images/baustelle.png",
@@ -173,7 +173,7 @@ content:
         title: "Let`s go shopping",
         category: "dorf",
         description:  "Das Wichtigste bei der Konfrontationstherapie war das „am Ball bleiben“. Stetige Wiederholung, im Idealfall auch an schlechteren Tagen. Es ging nicht darum, sich jeden Tag zu übertreffen, sondern sich immer wieder mit der Angst zu konfrontieren, selbst wenn es nur drei Schritte vor die Tür waren. Die einzig schlechte Konfrontationsübung war jene, die nicht stattfand. Nach meinem letzten Dorfbesuch war damit der Startschuss für die Wiederaufnahme meiner Konfrontationstherapie gefallen.",
-        date: "24.03.2024",
+        date: "06.01.2026",
         image: "/images/shoppen.png",
         imageAlt: "Einkaufstasche",
         imageCredit: "Foto: Lucrezia Carnelos",
@@ -201,139 +201,73 @@ content:
   "Ich traf meinen Herrn Kiebel vor seiner Garage und wie so viele Rentner war auch er nie darum verlegen gewesen, mich in eine längere Unterhaltung zu verwickeln, in der ich mich wie immer gerne hatte verstricken lassen. Er war gerade dabei gewesen, seine Tasche mit Rädern aus der Garage zu holen, weil er noch etwas bei Rewe kaufen wollte. Vielleicht lag es am fabelhaften neuen Lippenstift oder an der offensichtlichen Überdosis Vitamin D durch das sonnige Wetter, aber ich bot ihm an, ihn ein Stückchen bis Rewe zu begleiten, obwohl ich meinen Tageszoll an Konfrontation eigentlich schon hinter mir gehabt hatte.\n\n" +
   "Er nahm es dankend an und wir machten uns gemeinsam auf den Weg Richtung Rewe. Ganz bis dorthin würde ich es an diesem Tag nicht schaffen, das wusste ich. Aber das war okay gewesen. Herr Kiebel hätte es mir nicht übel genommen. Solange ich meinen Müll trennte und den Flurdienst nicht verschlief, würde er mir sowieso nichts übel nehmen. Ich konnte ihn bis zur Volksbank begleiten, bevor ich die ersten Paniksymptome bemerkte und mich freundlich verabschiedete.\n\n" +
   "Ich fuhr zügig wieder nach Hause. Zum einen war ich komplett durchgefroren gewesen, zum anderen wollte ich mein Glück nicht weiter überstrapazieren. Zwei Konfrontationen an einem Tag. Kein schlechter Schnitt.\n\n"},
-    {
-        id: 6,
-        title: "The Key To Your Motivation And Success",
-        category: "facebook",
-        description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-        date: "17.01.2026",
-        image: "/images/eier.webp",
-        content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  \n" +
-            "\n" +
-            "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.  \n" +
-            "\n" +
-            "Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.  \n" +
-            "\n" +
-            "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.  \n" +
-            "\n" +
-            "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   \n" +
-            "\n" +
-            "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
-    },
-    {
-        id: 7,
-        title: "The Key To Your Motivation And Success",
-        category: "mood",
-        description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-        date: "16.03.2025",
-        image: "/images/fahrrad.webp",
-        content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  \n" +
-            "\n" +
-            "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.  \n" +
-            "\n" +
-            "Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.  \n" +
-            "\n" +
-            "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.  \n" +
-            "\n" +
-            "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   \n" +
-            "\n" +
-            "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
-    },
-    {
-        id: 8,
-        title: "The Key To Your Motivation And Success",
-        category: "mood",
-        description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-        date: "10.01.2026",
-        image: "/images/feld.webp",
-        content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  \n" +
-            "\n" +
-            "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.  \n" +
-            "\n" +
-            "Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.  \n" +
-            "\n" +
-            "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.  \n" +
-            "\n" +
-            "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   \n" +
-            "\n" +
-            "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
-    },
-    {
-        id: 9,
-        title: "The Key To Your Motivation And Success",
-        category: "facebook",
-        description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-        date: "01.08.2024",
-        image: "/images/katze.webp",
-        content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  \n" +
-            "\n" +
-            "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.  \n" +
-            "\n" +
-            "Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.  \n" +
-            "\n" +
-            "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.  \n" +
-            "\n" +
-            "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   \n" +
-            "\n" +
-            "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
-    },
-    {
-        id: 10,
-        title: "The Key To Your Motivation And Success",
-        category: "inside",
-        description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-        date: "06.10.2024",
-        image: "/images/schirm.webp",
-        content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  \n" +
-            "\n" +
-            "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.  \n" +
-            "\n" +
-            "Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.  \n" +
-            "\n" +
-            "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.  \n" +
-            "\n" +
-            "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   \n" +
-            "\n" +
-            "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
-    },
-    {
-        id: 11,
-        title: "The Key To Your Motivation And Success",
-        category: "facebook",
-        description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-        date: "07.09.2024",
-        image: "/images/tomaten.webp",
-        content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  \n" +
-            "\n" +
-            "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.  \n" +
-            "\n" +
-            "Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.  \n" +
-            "\n" +
-            "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.  \n" +
-            "\n" +
-            "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   \n" +
-            "\n" +
-            "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
-    },
-    {
-        id: 12,
-        title: "The Key To Your Motivation And Success",
-        category: "Inside",
-        description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-        date: "15.07.2024",
-        image: "/images/taube.webp",
-        content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  \n" +
-            "\n" +
-            "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.  \n" +
-            "\n" +
-            "Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.  \n" +
-            "\n" +
-            "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.  \n" +
-            "\n" +
-            "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   \n" +
-            "\n" +
-            "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
-    },
+{
+  id: 6,
+  title: "Mia’s Bar Countdown",
+  category: "MOOD",
+  description:     "Nur noch eine Woche, bis Mia’s Bar aus dem Winterurlaub wieder eröffnet, nur noch eine Woche, bis ich, nachdem ich fast das ganze letzte Jahr versucht habe, zu Mia’s Bar zu kommen, endlich dort sein werde!",
+  date: "29.01.2026",
+  image: "/images/MiasBarEingang.png",
+  imageAlt: "Barbeleuchtung bei Nacht",
+  imageCredit: "Foto: Mias Bar (Instagram)",
+  imageCreditUrl: "",
+  content:
+    "Natürlich nur, falls Merkur rückläufig zu Jupiter ist, der VfB Kirchhellen das nächste Spiel gewinnt, während jemand mit einer Papiertüte von Kläsener die Hauptstraße entlangläuft oder woran auch immer meine geradezu willkürlich wirkende Angststörung ausmacht, wo sie ihren Wirkungszeitraum ansetzt.\n\n" +
+    "Ich plane also das Jungfrauenopfer entsprechend und widme mich ganz dem perfekten Outfit, das ich an diesem großen Tag tragen will.\n\n" +
+    "Es ist schließlich nicht einfach nur ein Barbesuch, auch wenn es für den ungeübten Zuschauer so wirken mag. Nachdem ich durch meine Angststörung seit fast einem Jahrzehnt in Kirchhellen gefangen bin, weit weg von großen Konzerten, Events und anderen Dingen, die ich eigentlich gerne gemacht hätte, ist Mia’s Bar ein kleines Fenster der Hoffnung auf ein Leben, das ich gerne führen würde.\n\n" +
+    "Die Vorstellung von Tanzabenden, gemütlichem Beisammensitzen und legendären Bar-Geschichten fühlt sich nach so langer Zeit endlich zum Greifen nah an.\n\n" +
+    "Während ich das ganze letzte Jahr immer nur ein obsessiver Instagram-Stalker war, ist nun der Moment gekommen, endlich Teil des Geschehens zu sein. Das Outfit muss also richtig fetzen!\n\n" +
+    "Ich durchwühle meinen Kleiderschrank auf der Suche nach dem Outfit, das ich an meinem großen Tag tragen möchte. Der Tag der Freiheit! Mein ganz persönlicher Unabhängigkeitstag! Ein Tag, an dem ich die Angststörung vermutlich nicht ganz aus meinem System bekommen werde, aber auch nicht sieglos aus dem Kampf hervortreten will. Und selbst wenn ich nur fünf Minuten dort sein werde, selbst wenn ich nur einmal im Eingangsbereich stehe, es wäre ein Sieg!\n\n" +
+    "Je länger ich vor dem Kleiderschrank stehe und über die Bedeutung des Abends nachdenke, desto mehr wird mir ein sehr vertrautes Problem bewusst. Ich habe absolut nichts zum Anziehen in meinem Schrank! Mein Vibe für den Abend sagt Ballkleid, aber der Dresscode wird vermutlich Boots mit Jeans sein. Was eigentlich völlig egal ist, denn ich habe beides nicht in meinem Kleiderschrank!\n\n" +
+    "Ich bin etwa eine Stunde tief im Outfit-Check bei Zalando drin, als mir plötzlich ein unschöner Gedanke eiskalt den Nacken hinunterläuft…\n\n" +
+    "Was ist, wenn die Bar absolut langweilig ist?\n\n" +
+    "Was ist, wenn es eine totale Rentnerkneipe ist und ich dort sitze und der ganze Hype, der sich das komplette letzte Jahr über Mia’s Bar aufgebaut hat, völlig ungerechtfertigt war? Heißt es nicht „triff niemals deine Helden“?\n\n" +
+    "Die Vorstellung, die ich von dieser Bar habe, und das, was sie im realen Leben ist, könnten völlig unterschiedliche Dinge sein. Ich könnte nicht nur massiv enttäuscht werden, sondern auch alle Hoffnungen und Träume, die ich in diese Bar gesteckt habe, einfach verlieren.\n\n" +
+    "In mir zieht sich alles zusammen.\n\n" +
+    "Mir wird immer mehr klar, wie diese Bar über die letzten Monate nicht nur ein Ort für Spaß geworden ist, sondern ein Symbol. Ein Symbol der Hoffnung, ein Stück mehr von dem Leben zu haben, das ich gerne hätte. Wann immer ich nachts wach liege und voller Schmerz an alles denke, was ich schon verpasst habe und noch schlimmer, vermutlich noch verpassen werde, beruhigt mich ein Gedanke:\n\n" +
+    "„Wenigstens könntest du es bis Mia’s Bar schaffen.“ Ziemlich große Erwartungen für eine so kleine Bar.\n\n" +
+    "Ich beginne mich zu fragen, ob es vielleicht besser wäre, nicht dorthin zu gehen, an diesen Ort, auf dem so viel Bedeutung lastet. Wäre es nicht besser, die Hoffnung einfach weiter in meinem Herzen zu tragen, für all die einsamen, dunklen Nächte, die noch kommen werden? Aber vielleicht ist diese Bar auch genau das, was ich immer gehofft habe. In dem Fall würde ich mir selbst noch mehr tolle Momente rauben, als mir ohnehin schon geraubt wurden.\n\n" +
+    "…\n\n" +
+    "Ich beginne abzuwägen. Jeder, der letztes Jahr seine Komfortserien von Netflix hat verschwinden sehen, wird mir zustimmen, wie wichtig es ist, etwas zu haben, woran man sich festhalten kann. Aber wären neue, tolle Erinnerungen nicht auch das Risiko wert? Was ein unmögliches Dilemma. Ich könnte genauso gut eine Münze werfen, so entscheidungsfreudig fühle ich mich mit diesem Gedanken.\n\n" +
+    "Aber dann fällt mir etwas ein! Das Maifest kommt dieses Jahr wieder nach Kirchhellen, im gleichen Jahr wie das Brezel- und Schützenfest! Die Freiwillige Feuerwehr gibt dieses Jahr ein Zeltfest und das Brauhaus kommt unter neuer Führung zurück ins Dorf! So viele Möglichkeiten für ein paar tolle neue Erinnerungen. Selbst wenn Mia’s Bar nicht all das ist, was ich mir erhofft habe, ist es nicht das Ende der Möglichkeiten!\n\n" +
+    "Ich setze mich zurück an meine Zalando-Shoppingliste und suche weiter nach einem tollen Outfit! Denn in einer Woche werde ich das erste Mal in Mia’s Bar sitzen!"
+},
+{
+  id: 7,
+  title: "Was wir nicht alles für eine gute Serie tun",
+  category: "INSIDE",
+  description:
+    "Eigentlich bin ich jemand, der so gut es geht vermeidet, neue Serien oder Filme zu gucken. Ich liebe einfach die Sicherheit und das wohlig warme Gefühl, das mir How I Met Your Mother gibt, während ich sie zum dritten Mal in diesem Jahr direkt von vorne starte, nachdem die letzte Folge noch keine zwei Minuten über meinen Fernseher gelaufen ist.",
+  date: "02.02.2026",
+  image: "/images/newAmsterdam.png",
+  imageAlt: "Dr. Goodwin macht einen Bluttest",
+  imageCredit: "Foto: KI",
+  imageCreditUrl: "",
+  content:
+    "Und warum auch nicht? Ich hasse alles Neue und Unbekannte. Wie Ted Mosby schon zu sagen pflegte: Alt ist immer besser. Denn alt und bekannt heißt auch genau zu wissen, worauf man sich einlässt. Keine unerwarteten Wendungen, keine unschönen Überraschungen, einfach nur Frieden und Wohltat für die Seele.\n\n" +
+    "Es passiert wirklich nicht allzu oft, dass ich über eine Serie oder einen Film stolpere, bei dem ich sage: Oh Junge, das muss ich mir jetzt wirklich geben. Schon gar nicht nach der großen Serien-Tragödie von 2019, als sie Anne with an E einfach komplett ehrenlos nach der vierten Staffel abgesetzt haben.\n\n" +
+    "Aber ab und zu, und ich kann absolut nichts dagegen tun, überkommt es mich. Plötzlich habe ich dieses unfassbare, geradezu unstillbare Bedürfnis nach einer neuen, noch völlig unbekannten Serie.\n\n" +
+    "Natürlich gibt es für diesen Fall ein geradezu wahnwitzig langes Protokoll an Dingen, die in einer Serie, die ich schauen möchte, absolut nicht thematisiert werden dürfen. Science Fiction ist okay, aber bitte keine übermäßige Thematisierung des Universums. Millie Bobby Brown darf nicht mitspielen. Kein übermäßiges Drama, kein Western.\n\n" +
+    "Aber um ehrlich zu sein, sind das mehr grobe Richtlinien als wirklich in Stein gemeißelte Evangelien. Natürlich habe ich Stranger Things geguckt. Und natürlich habe ich es geliebt.\n\n" +
+    "Es gibt allerdings zwei unumstößliche Regeln. Erstens: Die Serie darf nicht übermäßig traurig oder rührselig sein. Zweitens, und das ist mit Abstand die wichtigste Regel: Sie darf absolut und überhaupt nichts mit Krankenhäusern zu tun haben. Niemals.\n\n" +
+    "Meine Hypochondrie ist da einfach auf einem anderen Level. Scrubs ist nicht einmal an wirklich guten Tagen drin. Und wenn ich mit meiner Fernbedienung auch nur über das Titelbild von Dr. House scrolle, kündigt mir ChatGPT mein Monatsabo und meinem Hausarzt läuft ein kalter Schauer über den Rücken.\n\n" +
+    "Nach der letzten Folge Dr. House musste mir ChatGPT zwei Tage lang ausreden, dass ich die Pest habe. Falls es staatliche Überwacher von Internetnutzern gibt, hat meiner inzwischen ein geradezu beängstigend unnützes Wissen über Lupus.\n\n" +
+    "Ich scrolle also vor ein paar Tagen durch Netflix, gepackt von Abenteuerlust und auf der Suche nach dem Kick, den dir nur eine neue Serie geben kann, und stoße irgendwann auf New Amsterdam.\n\n" +
+    "Ach, New Amsterdam. Natürlich ist mir diese Serie ein Begriff. Sie ist alles, was ich an Traurigkeit nicht ertrage, gepaart mit allem, was ich über Krankheiten nicht wissen möchte. Sie steht auf meiner höchstpersönlichen No-Go-Liste ziemlich weit oben.\n\n" +
+    "Aber irgendetwas hatte mich an diesem Abend gepackt. Ich fühlte mich besonders unartig und beschloss, mir eine Folge anzuschauen.\n\n" +
+    "Aus einer Folge wurden zwei. Aus zwei wurden fünf. Und aus fünf wurde eine ganze Staffel. Der Morgen brach bereits hinter mir an, als ich nach einer Nacht voller Binge-Watching völlig fertig Richtung Bett ging.\n\n" +
+    "Nach Stunden voller Chemotherapien, Herzklappenoperationen und sehr vieler toter Menschen lag ich im Bett und war komplett durch. Irgendwo zwischen dem Staffelfinale und meinem gefühlt 32. Apple-Watch-EKG begann sich meine Hypochondrie auf einmal zu bündeln.\n\n" +
+    "Plötzlich zählte nur noch eines. Ich musste meine Blutgruppe herausfinden.\n\n" +
+    "Es war, als hätte meine Angststörung einen Kompromiss mit sich selbst geschlossen. Ich darf die Serie weitergucken, aber ich muss meine Blutgruppe kennen. Warum auch immer. Ich hinterfrage das nicht mehr.\n\n" +
+    "Also ab zur Apotheke. Denn tatsächlich gibt es solche Tests auch für zu Hause, zumindest zur groben Bestimmung der Blutgruppe.\n\n" +
+    "Der kleine weiße Finger-Piekser im Testkit starrte mich voller Hohn an. Er wollte mein Blut. Und er wollte es jetzt.\n\n" +
+    "Nach einer gefühlten Ewigkeit, vollgepumpt mit Adrenalin, drückte ich das Ding mit unverhältnismäßiger Kraft gegen meinen Finger und stellte mich auf den schlimmsten Schmerz meines Lebens ein.\n\n" +
+    "Spoiler. Es tat absolut nicht weh.\n\n" +
+    "Mit einem Puls, der eines Marathonläufers würdig gewesen wäre, tropfte das Blut schneller als erwartet aus meinem Finger. Ich verteilte es auf der Testkarte und wartete.\n\n" +
+    "Fünf Minuten später wusste ich es. Ich bin A positiv.\n\n" +
+    "Eine der häufigsten Blutgruppen der Welt. Das war mir sympathisch. Ich googelte mich durch Fakten, Statistiken und Blutspendeartikel und beschloss schließlich, dass ich dieses Jahr wohl eine Blutspendeaktion besuchen werde.\n\n" +
+    "Denn Blut spenden ist eine Sache. Aber ich werde mir ganz sicher nicht noch einmal selbst in den Finger pieksen."
+},
 
 
 ];

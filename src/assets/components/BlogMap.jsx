@@ -155,11 +155,6 @@ export default function BlogMap() {
             );
           })}
         </MapContainer>
-
-        {/* Kleine Legende (optional) */}
-        <div className="map-legend" aria-hidden="true">
-          <span className="mapLine">–––</span> Radius
-        </div>
       </div>
     </section>
   );

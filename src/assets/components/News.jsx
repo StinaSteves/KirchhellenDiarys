@@ -11,7 +11,7 @@ import blogData from "../data/blogData";
 import BlogCard from "./BlogCard.jsx";
 
 export default function News() {
-  const category = "facebook";
+  const category = "dorf";
 
   const items = useMemo(
     () =>
@@ -37,14 +37,14 @@ export default function News() {
       <section aria-labelledby="news-heading" className="newsArticle mt-4">
         <div className="newsArticleText">
           <p>Neues</p>
-          <h2 id="news-heading">Aus Facebook</h2>
+          <h2 id="news-heading">Aus dem Dorf</h2>
           <p>Keine Beiträge vorhanden.</p>
         </div>
       </section>
     );
   }
 
-  const groupLabel = "News-Slider Aus Facebook";
+  const groupLabel = "News-Slider Aus dem Dorf";
 
   return (
     <section
@@ -58,13 +58,13 @@ export default function News() {
 
       <div className="newsArticleText">
         <p>Neues</p>
-        <h2 id="news-heading">Aus Facebook</h2>
-        <p>Was beschäftigt Kirchhellen Online</p>
+        <h2 id="news-heading">Aus dem Dorf</h2>
+        <p>Was geht in Kirchhellen</p>
 
         <Link
           to={`/kategorie/${category}`}
           className="category-all mt-1"
-          aria-label="Alle Facebook-Artikel anzeigen"
+          aria-label="Alle Dorf-Artikel anzeigen"
         >
           Alle Artikel <FontAwesomeIcon icon={faArrowRight} aria-hidden="true" />
         </Link>

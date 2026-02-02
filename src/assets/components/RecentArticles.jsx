@@ -2,6 +2,24 @@ import { useMemo, useState } from "react";
 import blogData from "../data/blogData";
 import { Link } from "react-router-dom";
 
+// 🔧 robustes Date-Parsing (ISO + deutsches Format)
+const parseDate = (date) => {
+  if (!date) return 0;
+
+  // ISO / Standard-Date
+  const iso = Date.parse(date);
+  if (!isNaN(iso)) return iso;
+
+  // Deutsches Format: DD.MM.YYYY
+  const m = date.match(/^(\d{2})\.(\d{2})\.(\d{4})$/);
+  if (m) {
+    const [, d, mo, y] = m;
+    return new Date(`${y}-${mo}-${d}`).getTime();
+  }
+
+  return 0;
+};
+
 export default function RecentArticles() {
   const INITIAL_COUNT = 6;
   const LOAD_STEP = 3;
@@ -9,11 +27,17 @@ export default function RecentArticles() {
   const [visibleCount, setVisibleCount] = useState(INITIAL_COUNT);
 
   const total = blogData.length;
+
+  // 🆕 sortiert neu → alt, danach slice
   const visibleArticles = useMemo(
-    () => blogData.slice(0, visibleCount),
+    () =>
+      blogData
+        .slice() // Original nicht mutieren
+        .sort((a, b) => parseDate(b?.date) - parseDate(a?.date))
+        .slice(0, visibleCount),
     [visibleCount]
   );
- 
+
   const srStatus = `${visibleArticles.length} von ${total} Artikeln sichtbar.`;
 
   function handleToggle() {
@@ -31,8 +55,8 @@ export default function RecentArticles() {
   }
 
   function isoFromDateStr(str) {
-    const d = new Date(str);
-    return isNaN(d) ? null : d.toISOString();
+    const t = parseDate(str);
+    return t ? new Date(t).toISOString() : null;
   }
 
   function imgAlt(article) {
@@ -66,10 +90,10 @@ export default function RecentArticles() {
 
       <ul id={listId} className="articlesGrid m-3" role="list">
         {visibleArticles.map((article) => {
-          const title = article.title || "Beitrag";
-          const category = article.category || "Allgemein";
-          const desc = truncateWords(article.description, 50);
-          const dateText = article.date || "";
+          const title = article?.title || "Beitrag";
+          const category = article?.category || "Allgemein";
+          const desc = truncateWords(article?.description, 50);
+          const dateText = article?.date || "";
           const dateISO = dateText ? isoFromDateStr(dateText) : null;
           const hasImg = Boolean(article?.image);
           const titleId = `t-${article.id}`;

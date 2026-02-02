@@ -19,5 +19,11 @@ export const mapState = {
       lng: 6.9212,
       postId: 4,
     },
+      {
+      id: "p-3",
+      lat: 51.6036,
+      lng: 6.9223,
+      postId: 5,
+    },
   ],
 };

@@ -12,7 +12,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 export default function Category() {
   const [active, setActive] = useState("mood");
-  const menuItems = ["mood", "facebook", "inside", "dorf"];
+  const menuItems = ["mood", "inside", "dorf"];
   const navigate = useNavigate();
 
   const prevRef = useRef(null);

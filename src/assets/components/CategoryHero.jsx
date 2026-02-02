@@ -12,7 +12,6 @@ export default function NewHero({ category: categoryProp }) {
 
   const displayMap = {
     mood: "Mood",
-    facebook: "Facebook",
     inside: "Inside",
     dorf: "Dorf",
   };
@@ -23,8 +22,6 @@ export default function NewHero({ category: categoryProp }) {
   const descriptionMap = {
     mood:
       "In dieser Kategorie geht es um den Umgang mit meiner Angststörung und den Herausforderungen des Alltags. Ich schreibe über persönliche Erfahrungen, Strategien zur Bewältigung und Gedanken rund um mentale Gesundheit.",
-    facebook:
-      "Hier dokumentiere ich aktuelle Themen, Diskussionen und Entwicklungen aus der Facebook-Gruppe. Beiträge in dieser Kategorie spiegeln wider, was die Community bewegt.",
     dorf:
       "Kirchhellen lebt von seinem Miteinander. In dieser Kategorie geht es um das Dorfleben: Veranstaltungen, Vereine, Gastronomie, Geschäfte und besondere Momente, die das Leben hier ausmachen.",
     inside:

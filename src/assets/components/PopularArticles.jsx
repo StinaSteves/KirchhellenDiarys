@@ -1,8 +1,28 @@
 import blogData from "../data/blogData";
 import { Link } from "react-router-dom";
 
+const parseDate = (date) => {
+  if (!date) return 0;
+
+  // ISO / normales Date-Format
+  const iso = Date.parse(date);
+  if (!isNaN(iso)) return iso;
+
+  // deutsches Format: DD.MM.YYYY
+  const match = date.match(/^(\d{2})\.(\d{2})\.(\d{4})$/);
+  if (match) {
+    const [, d, m, y] = match;
+    return new Date(`${y}-${m}-${d}`).getTime();
+  }
+
+  return 0;
+};
+
 export default function PopularArticles() {
-  const popularArticles = (blogData || []).slice(0, 3);
+  const popularArticles = (blogData || [])
+    .slice() // keine Mutation des Originals
+    .sort((a, b) => parseDate(b?.date) - parseDate(a?.date))
+    .slice(0, 3);
 
   const altFor = (article) =>
     article?.image ? `Beitragsbild: ${article.title || "Artikel"}` : "";
@@ -15,7 +35,9 @@ export default function PopularArticles() {
           <h2 id="popular-heading">Beliebte Artikel</h2>
           <hr aria-hidden="true" />
         </div>
-        <p role="status" aria-live="polite">Keine beliebten Artikel vorhanden.</p>
+        <p role="status" aria-live="polite">
+          Keine beliebten Artikel vorhanden.
+        </p>
       </section>
     );
   }
@@ -33,10 +55,13 @@ export default function PopularArticles() {
           const title = article?.title || "Unbenannter Artikel";
           const desc = article?.description || "";
           const words = desc.split(/\s+/).filter(Boolean);
-          const excerpt = words.slice(0, 20).join(" ") + (words.length > 20 ? "…" : "");
+          const excerpt =
+            words.slice(0, 20).join(" ") +
+            (words.length > 20 ? "…" : "");
+
           const hasImg = Boolean(article?.image);
           const titleId = `pop-title-${article.id}`;
-          const dateISO = article?.date ? new Date(article.date) : null;
+          const dateISO = article?.date ? new Date(parseDate(article.date)) : null;
 
           return (
             <li key={article.id} className="popularCardItem">
@@ -54,7 +79,6 @@ export default function PopularArticles() {
                         sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
                       />
                     ) : (
-     
                       <div
                         className="popularCardMedia--fallback"
                         aria-hidden="true"
@@ -72,12 +96,18 @@ export default function PopularArticles() {
                       {title}
                     </h3>
 
-                    {excerpt && <p className="description">{excerpt}</p>}
+                    {excerpt && (
+                      <p className="description">{excerpt}</p>
+                    )}
 
                     {article.date && (
                       <p className="date">
                         {dateISO instanceof Date && !isNaN(dateISO)
-                          ? <time dateTime={dateISO.toISOString()}>{article.date}</time>
+                          ? (
+                            <time dateTime={dateISO.toISOString()}>
+                              {article.date}
+                            </time>
+                          )
                           : <span>{article.date}</span>}
                       </p>
                     )}
